@@ -13,7 +13,7 @@
     </ng-template>
     <ng-template pTemplate="body" let-user>
       <tr>
-        <td>{{user.id}}</td>
+        <td>{{user.id}}</td> <!-- Columna comun que no se puede editar -->
         <td pEditableColumn>
           <p-cellEditor>
             <ng-template pTemplate="input">
