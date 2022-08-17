@@ -14,6 +14,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { HomeComponent } from './pages/home/home.component'
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HomeComponent } from './pages/home/home.component'
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    MatTabsModule,
 
     // PrimeNG Components
     TableModule,
