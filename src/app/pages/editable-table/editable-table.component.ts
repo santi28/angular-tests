@@ -18,6 +18,12 @@ export class EditableTableComponent implements OnInit {
     { id: '001', sell_value: 410, comision: 6, quant: 1, total: 0 },
   ]
 
+  public checker: object[] = [
+    { id: 1, country: 'Argentina', year: 2022, type: 'BUDGET', checked: true },
+    { id: 2, country: 'Argentina', year: 2022, type: 'RF', checked: false },
+    { id: 3, country: 'Argentina', year: 2022, type: 'BUDGET', checked: false },
+  ]
+
   public actual_users: object[] = []
 
   constructor() {
@@ -47,5 +53,4 @@ export class EditableTableComponent implements OnInit {
   dumpTable(): void {
     console.table(this.users)
   }
-
 }
